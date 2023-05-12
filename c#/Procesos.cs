@@ -123,6 +123,7 @@ namespace cosicascSharp
             if (File.Exists(rutaEtiqueCancelar))
             {
                 File.Move(rutaEtiqueCancelar, rutaEtiqueCancelar.Replace(".pdf", "_cancel.pdf"));
+                Console.WriteLine("Procesando");
             };
 
         }

@@ -9,7 +9,7 @@ namespace cosicascSharp
             var proc = new Procesos();
             //proc.expresionesLambda(150);
             //proc.conectarBD();
-            // proc.pruebicasLambda();
+            //proc.pruebicasLambda();
             //proc.enviarTeleGram();
 
             proc.procesicos();
