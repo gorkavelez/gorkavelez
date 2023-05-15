@@ -3405,11 +3405,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\SALTO\\Programacion\\c#\\c#.csproj",
+      "projectUniqueName": "C:\\Users\\g.velez\\Downloads\\ReposVSCode\\gorkavelez\\c#\\c#.csproj",
       "projectName": "c#",
-      "projectPath": "C:\\SALTO\\Programacion\\c#\\c#.csproj",
+      "projectPath": "C:\\Users\\g.velez\\Downloads\\ReposVSCode\\gorkavelez\\c#\\c#.csproj",
       "packagesPath": "C:\\Users\\g.velez\\.nuget\\packages\\",
-      "outputPath": "C:\\SALTO\\Programacion\\c#\\obj\\",
+      "outputPath": "C:\\Users\\g.velez\\Downloads\\ReposVSCode\\gorkavelez\\c#\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\g.velez\\AppData\\Roaming\\NuGet\\NuGet.Config",

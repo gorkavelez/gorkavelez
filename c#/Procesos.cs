@@ -170,25 +170,36 @@ namespace cosicascSharp
 
         public void enviarTeleGram()
         {
-            string response = string.Empty;
-            string varTExto = "";
-            for (int index = 0; index < 100; index++)
+            try
             {
-                varTExto += "haver ";
+                string response = string.Empty;
+                string varTExto = "";
+                for (int index = 0; index < 100; index++)
+                {
+                    varTExto += "haver ";
+                }
+                string URLSend = @"https://api.telegram.org/bot867933183:AAG1rfrbsUv4lc965oSYSlZSPEPPWL2NPO8/sendMessage?chat_id=8965025&text=" + @"" + varTExto + "";
+
+                WebResponse webResponse = null;
+
+                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(URLSend);
+                request.Method = "POST";
+                request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
+
+                webResponse = request.GetResponse();
+                Stream webStream = webResponse.GetResponseStream();
+                var responseReader = new StreamReader(webStream);
+                response = responseReader.ReadToEnd();
+                responseReader.Close();
             }
-            string URLSend = @"https://api.telegram.org/bot867933183:AAG1rfrbsUv4lc965oSYSlZSPEPPWL2NPO8/sendMessage?chat_id=8965025&text=" + @"" + varTExto + "";
-
-            WebResponse webResponse = null;
-
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(URLSend);
-            request.Method = "POST";
-            request.AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
-
-            webResponse = request.GetResponse();
-            Stream webStream = webResponse.GetResponseStream();
-            var responseReader = new StreamReader(webStream);
-            response = responseReader.ReadToEnd();
-            responseReader.Close();
+            catch (WebException wEx)
+            {
+                Console.WriteLine(wEx.Message);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
         }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zEWea+mG01lYSaFoS46lB66/i6VO35gfBkCHRJlMrwAg2zO3ced9jh3NgCpVFhCSKDqrAJk3G/5Esh+uCfht/A==",
+  "dgSpecHash": "Zq0X7NmmYCqXDo/u4MsLpuAHhD4FFps/BAMwRc4pFls3XcG8kLwMsywahx8TEfUuNVVthhogfNKKtHdzOAfT6A==",
   "success": true,
-  "projectFilePath": "C:\\SALTO\\Programacion\\c#\\c#.csproj",
+  "projectFilePath": "C:\\Users\\g.velez\\Downloads\\ReposVSCode\\gorkavelez\\c#\\c#.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\g.velez\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\g.velez\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
