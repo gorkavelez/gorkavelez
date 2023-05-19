@@ -55,6 +55,13 @@ namespace cosicascSharp
             }
         }
 
+        public void tratarInfo()
+        {
+            string shpmentDtl = "E123456|E458965|E895423";
+            string changed = shpmentDtl.Replace("|", " ");
+            Console.WriteLine(changed);
+        }
+
         static public void ExpresionesLambda(List<customer> daticos)
         {
             var consulta = daticos.Select(x => x).Where(x => x.Name.Contains("AR"));
