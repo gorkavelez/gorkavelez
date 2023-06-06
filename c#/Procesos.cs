@@ -55,6 +55,15 @@ namespace cosicascSharp
             }
         }
 
+        public void PruebasTexto()
+        {
+            string textoCheck = "E404268|E404385|E404710|E405489|E406005";
+            string mostrar = textoCheck.Length <= 35 ? textoCheck : textoCheck.Substring(1, 35);
+
+            Console.WriteLine(mostrar);
+
+        }
+
         public void tratarInfo()
         {
             string shpmentDtl = "E123456|E458965|E895423";

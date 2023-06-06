@@ -15,6 +15,7 @@ namespace cosicascSharp
 
             //proc.procesicos();
             //proc.enviarTeleGram();
+            proc.PruebasTexto();
         }
     }
 }
